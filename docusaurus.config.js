@@ -50,6 +50,7 @@ const config = {
         {property:"og:site_name", content:"Fantastic Dice"},
         {property: 'og:image', content: 'https://fantasticdice.games/img/fantasticScreenshot.jpg'},
         {property: 'og:image:alt', content: 'Fantastic Dice Homepage'},
+        {property: 'og:type', content: 'article'},
         {name:"twitter:card", value:"summary_large_image"},
       ],
       navbar: {
