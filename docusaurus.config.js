@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Fantastic Dice',
   tagline: '3D dice to level up your fun',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://fantasticdice.games',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,6 +45,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {name: 'keywords', content: '3D, dice, RPG, TTRPG, simulated, 3d-dice, d20, game'},
+        {property:"og:site_name", content:"Fantastic Dice"},
+        {property: 'og:image', content: 'https://fantasticdice.games/img/fantasticScreenshot.jpg'},
+        {property: 'og:image:alt', content: 'Fantastic Dice Homepage'},
+        {name:"twitter:card", value:"summary_large_image"},
+      ],
       navbar: {
         title: 'Fantastice Dice',
         logo: {

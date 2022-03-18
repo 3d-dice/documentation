@@ -23,7 +23,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Welcome to ${siteConfig.title}`}
+      title="Roll some dice!"
       description="3D dice module for JavaScript Apps with TTRPG in mind">
       <HomepageHeader />
       <main>
