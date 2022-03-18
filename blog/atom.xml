@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-test-site.com/blog</id>
+    <title>Fantastic Dice Blog</title>
+    <updated>2022-03-18T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-test-site.com/blog"/>
+    <subtitle>Fantastic Dice Blog</subtitle>
+    <icon>https://your-docusaurus-test-site.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[My Pandemic Project is Almost Ready]]></title>
+        <id>first-blog-post</id>
+        <link href="https://your-docusaurus-test-site.com/blog/first-blog-post"/>
+        <updated>2022-03-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It's been almost 2 years since I started digging into what it would take to build a fantastic dice roller that anyone could use in their own JavaScript projects. I've spend many hours optimizing this project so it would be both flexible and performant. I'm hopeful that it will gain traction and live up to expectations.]]></summary>
+        <content type="html"><![CDATA[<p>It's been almost 2 years since I started digging into what it would take to build a fantastic dice roller that <em>anyone</em> could use in their own JavaScript projects. I've spend many hours optimizing this project so it would be both flexible and performant. I'm hopeful that it will gain traction and live up to expectations.</p><p>I have some more exciting features in que before hitting the version 1.0 switch. I'm also waiting on <a href="https://www.babylonjs.com/" target="_blank" rel="noopener noreferrer">BabylonJS</a> to hit <a href="https://forum.babylonjs.com/t/babylon-js-5-is-coming/26750" target="_blank" rel="noopener noreferrer">version 5</a> this Spring.</p><p>This site will continue to be updated along the way.</p><p>Cheers!</p>]]></content>
+        <author>
+            <name>Frank Ali</name>
+            <uri>https://github.com/frankieali</uri>
+        </author>
+        <category label="chat" term="chat"/>
+    </entry>
+</feed>
