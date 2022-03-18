@@ -1,0 +1,93 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+ /* CSS HEX */
+:root {
+  /* --dark-slate-blue: #54428eff;
+  --amethyst: #8963baff;
+  --turquoise-green: #afe3c0ff;
+  --dark-sea-green: #90c290ff;
+  --russian-green: #688b58ff; */
+
+
+  --dark-slate-blue: rgba(84, 66, 142, .4);
+  --amethyst: rgba(137, 99, 186, .4);
+  --turquoise-green: rgba(175, 227, 192, .4);
+  --dark-sea-green: rgba(144, 194, 144, .4);
+  --russian-green: rgba(104, 139, 88, .4);
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 60px)
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.heroBannerText {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-shadow: 0 1px 0 #ccc, 
+              0 2px 0 #949494,
+              0 3px 0 rgb(99, 99, 99),
+              0 4px 0 #4a4a4a,
+              0 5px 0 rgb(45, 45, 45),
+              0 6px 1px rgba(0,0,0,.1),
+              0 0 5px rgba(0,0,0,.1),
+              0 1px 3px rgba(0,0,0,.3),
+              0 3px 5px rgba(0,0,0,.2),
+              0 5px 10px rgba(0,0,0,.25),
+              0 10px 10px rgba(0,0,0,.2),
+              0 20px 20px rgba(0,0,0,.15);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgDice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Standard syntax */
+@keyframes backgroundColorPalette {
+  0% {
+    background: var(--dark-slate-blue);
+  }
+  25% {
+    background: var(--amethyst);
+  }
+  50% {
+    background: var(--turquoise-green);
+  }
+  75% {
+    background: var(--dark-sea-green);
+  }
+  100% {
+    background: var(--russian-green);
+  }
+}
+
