@@ -20,3 +20,10 @@ As a post-install script, the module will attempt to copy files over to `/public
 
 ## Die Types
 This documentation makes frequent reference to common dice notations such as `5d6` where the first number represents the number of dice to roll and the `d#` represents the number of sides on a die. Currently support dice are `d4`, `d6`, `d8`, `d10`, `d12`, `d20`, and `d100`
+
+## Show me some code
+See the kitchen sink code demo here: https://codesandbox.io/s/3d-dice-demo-2bily5
+
+Here's a simple React Demo for rolling attributes (using 3d6): https://codesandbox.io/s/react-roller-attributes-6jjiod
+
+Here's a React Demo with support for advanced dice notation: https://codesandbox.io/s/react-roller-advanced-notation-xl8foh
