@@ -29,7 +29,7 @@ The notation argument can accept the following roll formats
 1. an array of string notation. e.g.: `['2d10','2d6']`
 1. a Roll Object as described above. e.g.:`{qty: 5, sides: 10}`
 1. an array of Roll Objects. e.g.:`[{qty: 2, sides: 10},{qty: 1, sides: 6}]` |
-1. a mixed array of Roll Objects and string notation. e.g.:`[{{qty: 2, sides: 10}},'2d8']`
+1. a mixed array of Roll Objects and string notation. e.g.:`[{qty: 2, sides: 10},'2d8']`
 :::
 
 ### Options
