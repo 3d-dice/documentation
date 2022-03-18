@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Fantastic Dice Blog</title>
-        <link>https://your-docusaurus-test-site.com/blog</link>
+        <link>https://fantasticdice.games/blog</link>
         <description>Fantastic Dice Blog</description>
         <lastBuildDate>Fri, 18 Mar 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[My Pandemic Project is Almost Ready]]></title>
-            <link>https://your-docusaurus-test-site.com/blog/first-blog-post</link>
+            <link>https://fantasticdice.games/blog/first-blog-post</link>
             <guid>first-blog-post</guid>
             <pubDate>Fri, 18 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[It's been almost 2 years since I started digging into what it would take to build a fantastic dice roller that anyone could use in their own JavaScript projects. I've spend many hours optimizing this project so it would be both flexible and performant. I'm hopeful that it will gain traction and live up to expectations.]]></description>
