@@ -138,7 +138,7 @@ const config = {
               },
               {
                 label: 'Release Notes',
-                to: '/releaseNotes',
+                to: '/docs/changelog',
               },
               {
                 label: 'GitHub',
