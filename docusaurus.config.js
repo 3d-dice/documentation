@@ -14,7 +14,9 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: '3d-dice', // Usually your GitHub org/user name.
-  projectName: 'Fantastic Dice', // Usually your repo name.
+  projectName: 'docs', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   presets: [
     [
