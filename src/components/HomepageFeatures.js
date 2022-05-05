@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'High Performance',
-    Img: require('../../static/img/icons/launch.jpg').default,
+    Img: '/img/icons/launch.svg',
     description: (
       <>
         Developed from the ground up with performance in mind. Using web workers, offscreen canvas rendering, WASM, and array buffers to speed everything up. Go ahead, roll hundreds of dice.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Compact',
-    Img: require('../../static/img/icons/package.jpg').default,
+    Img: '/img/icons/package.svg',
     description: (
       <>
         Custom configured physics simulation engine (AmmoJS) and rendering engine (BabylonJS) in order to keep the JavaScript payload around 400k after compression. That's a full 3D environment with physics that runs in a browser! 
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Responsive',
-    Img: require('../../static/img/icons/scalable.jpg').default,
+    Img: '/img/icons/scalable.svg',
     description: (
       <>
         Designed to be responsive and perform great on mobile devices. Not only will the Dice-Box resize with the browser window, but you can also set the size of your dice in the configurations.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Themable',
-    Img: require('../../static/img/icons/unit.jpg').default,
+    Img: '/img/icons/unit.svg',
     description: (
       <>
         Capabale of handling many different looks and every roll can have a different look. Comes pre-packed with HEX color support, but one can easily drop in custom built themes for the look you want. 
@@ -41,7 +41,7 @@ const FeatureList = [
   },
   {
     title: 'Easy Config',
-    Img: require('../../static/img/icons/feature-list.jpg').default,
+    Img: '/img/icons/feature-list.svg',
     description: (
       <>
         Many of the physics and 3D environment paramaters have been exposed for easy customization. Want to make the gravity five times stronger? Go right ahead. All parameters are easy to alter even after initializing the Dice-Box.
@@ -50,7 +50,7 @@ const FeatureList = [
   },
   {
     title: 'Addon Support',
-    Img: require('../../static/img/icons/box-solution.jpg').default,
+    Img: '/img/icons/box-solution.svg',
     description: (
       <>
         A few addons are already available with more in the works. The results of the dice roller are formatted as a detailed JavaScript object. Addons can build on top of those results for any number of uses.

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, 2, 2.363785)">
+    <g transform="matrix(1, 0, 0, -1, 57, 23)">
+      <path d="M 0 0 C 0 -12.702 -10.298 -23 -23 -23 C -35.702 -23 -46 -12.702 -46 0 C -46 12.702 -35.702 23 -23 23 C -10.298 23 0 12.702 0 0" style="fill: rgb(233, 234, 235); fill-opacity: 1;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 6.000001, 7)">
+      <path d="M 0 0 L -6 -6 L -6 -51 L 32 -51 L 32 0 Z" style="fill: rgb(255, 255, 255); fill-opacity: 1;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 8.000001, 15)">
+      <path d="M 0 0 L -8 0 L -8 2 L -2 8 L 0 8 Z" style="fill: rgb(163, 212, 255); fill-opacity: 1;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 38, 29)">
+      <path d="M 0 0 L 0 22 L -32 22 L -38 16 L -38 -29 L 0 -29 L 0 -25" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: round; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 2.000001, 15)">
+      <path d="M 0 0 L 6 0 L 6 6" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 44, 30.001312)">
+      <path d="M 0 0 L -11 -4.999 L -11 -17.999 L 0 -22.999 L 11 -17.999 L 11 -4.999 Z" style="fill: rgb(163, 212, 255); fill-opacity: 1;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 44, 30.001312)">
+      <path d="M 0 0 L -11 -4.999 L -11 -17.999 L 0 -22.999 L 11 -17.999 L 11 -4.999 L 0 0 Z" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 33, 35)">
+      <path d="M 0 0 L 11 -5 L 22 0" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 44, 40)">
+      <path d="M 0 0 L 0 -13" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 43, 59.27243)">
+      <path d="M 0 0 L 17 7.727 L 17 27.818 L 0 35.543" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 6.999002, 21.999023)">
+      <path d="M 0 0 L 2.001 -2.001 L 6.001 2.999" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 6.999002, 29.999023)">
+      <path d="M 0 0 L 2.001 -2.001 L 6.001 2.999" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 6.999002, 37.999023)">
+      <path d="M 0 0 L 2.001 -2.001 L 6.001 2.999" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 6.999002, 45.999023)">
+      <path d="M 0 0 L 2.001 -2.001 L 6.001 2.999" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 17.000002, 22)">
+      <path d="M 0 0 L 13 0" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 17.000002, 30)">
+      <path d="M 0 0 L 13 0" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 17.000002, 38)">
+      <path d="M 0 0 L 13 0" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, 17.000002, 46)">
+      <path d="M 0 0 L 13 0" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+    </g>
+  </g>
+</svg>

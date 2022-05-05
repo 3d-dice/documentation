@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clippath0" transform="">
+      <path d="M 0 461.707 L 393.024 461.707 L 393.024 0 L 0 0 Z" style="fill: none; clip-rule: nonzero;"/>
+    </clipPath>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 2.000092)">
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(368.235 375.1448)">
+        <path d="M 0 0 C 0 -11.013 -8.927 -19.94 -19.94 -19.94 C -30.953 -19.94 -39.88 -11.013 -39.88 0 C -39.88 11.013 -30.953 19.94 -19.94 19.94 C -8.927 19.94 0 11.013 0 0" style="fill: rgb(233, 234, 235); fill-opacity: 1;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(385.3638 380.085)">
+        <path d="M 0 0 L -49 0 C -50.105 0 -51 -0.895 -51 -2 L -51 -37 L 2 -37 L 2 -2 C 2 -0.895 1.105 0 0 0" style="fill: rgb(255, 255, 255); fill-opacity: 1;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(334.3638 344.085)">
+        <path d="M 0 0 L 0 34 C 0 35.105 0.895 36 2 36 L 51 36 C 52.105 36 53 35.105 53 34 L 53 0" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(330.3638 377.085)">
+        <path d="M 0 0 L 0 2 C 0 4.761 2.239 7 5 7 L 19 7" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(391.3638 362.085)">
+        <path d="M 0 0 L 0 17 C 0 19.761 -2.239 22 -5 22 L -8 22" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(391.3638 344.085)">
+        <path d="M 0 0 L -24 0 L -25 -1 L -37 -1 L -38 0 L -62 0 L -62 -2 C -62 -3.65 -60.65 -5 -59 -5 L -3 -5 C -1.343 -5 0 -3.657 0 -2 Z" style="fill: rgb(255, 255, 255); fill-opacity: 1;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(391.3638 344.085)">
+        <path d="M 0 0 L -24 0 L -25 -1 L -37 -1 L -38 0 L -62 0 L -62 -2 C -62 -3.65 -60.65 -5 -59 -5 L -3 -5 C -1.343 -5 0 -3.657 0 -2 L 0 0 Z" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(360.3638 373.0837)">
+        <path d="M 0 0 L -12 -4.999 L -12 -17.999 L 0 -22.999 L 12 -17.999 L 12 -4.999 Z" style="fill: rgb(163, 212, 255); fill-opacity: 1;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(360.3638 373.0837)">
+        <path d="M 0 0 L -12 -4.999 L -12 -17.999 L 0 -22.999 L 12 -17.999 L 12 -4.999 L 0 0 Z" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(348.3638 368.085)">
+        <path d="M 0 0 L 12 -5 L 24 0" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(360.3638 363.085)">
+        <path d="M 0 0 L 0 -13" style="fill: none; stroke: rgb(42, 80, 130); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(343.3638 371.085)">
+        <path d="M 0 0 L 0 4 L 4 4" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(377.3638 371.085)">
+        <path d="M 0 0 L 0 4 L -4 4" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(343.3638 352.085)">
+        <path d="M 0 0 L 0 -4 L 4 -4" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(377.3638 352.085)">
+        <path d="M 0 0 L 0 -4 L -4 -4" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath0);" transform="matrix(1, 0, 0, -1, -328.35498, 395.084808)">
+      <g transform="translate(339.3638 335.085)">
+        <path d="M 0 0 L 20 0" style="fill: none; stroke: rgb(188, 192, 196); stroke-opacity: 1; stroke-miterlimit: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-width: 2px; stroke-dashoffset: 0px;"/>
+      </g>
+    </g>
+  </g>
+</svg>
