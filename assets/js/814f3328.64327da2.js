@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Version 1 Release","permalink":"/blog/version-1"},{"title":"Future Features","permalink":"/blog/future-features"},{"title":"My Pandemic Project is Almost Ready","permalink":"/blog/first-blog-post"}]}')}}]);
