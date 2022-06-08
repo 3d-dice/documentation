@@ -1,8 +1,8 @@
 ---
 displayed_sidebar: changelog
-sidebar_position: 4
+sidebar_position: 2
 ---
 
-# Version 0.5
+# Version 1.0
 
 ## Stub

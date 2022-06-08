@@ -8,15 +8,15 @@ This is a simple UI module aimed at making picking dice simple and easy. I put t
 ![Dice Picker Screenshot](/img/dicePicker1.jpg)
 
 ## Install
-Add the FUI module using
+Add the dice-ui module using
 ```
-npm install @3d-dice/fui
+npm install @3d-dice/dice-ui
 ```
 
 ## Setup
-Then create a new instace of the picker
+Then create a new instance of the picker
 ```javascript
-import { DicePicker } from '@3d-dice/fui'
+import { DicePicker } from '@3d-dice/dice-ui'
 
 const dicePicker = new DicePicker()
 ```

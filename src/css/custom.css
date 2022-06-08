@@ -83,3 +83,43 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .displayResults .null img {
 	filter: invert(30%) sepia(46%) saturate(457%) hue-rotate(175deg) brightness(98%) contrast(93%);
 }
+
+/* // Add a dashed line under jargon terms */
+.jargon-term {
+  text-decoration: underline dotted #228be6
+}
+/* // Add a question mark behind/above jargon terms */
+.jargon-term::after {
+  content: "?";
+  font-weight: bold;
+  display: inline-block;
+  transform: translate(0, -0.5em);
+  font-size: 75%;
+  color: #228be6;
+  margin-left: 3px;
+}
+/* // Hover behavior for the therm itself */
+.jargon-term:hover {
+  position: relative;
+  text-decoration: none;
+  cursor: help;
+}
+/* // Hide info by default */
+.jargon-term .jargon-info {
+  display: none
+}
+/* // Show info on hover */
+.jargon-term:hover .jargon-info {
+  display: block;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  background: #F8F8F8;
+  border: 1px solid #DCDCDC;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 90%;
+  min-width: 250px;
+  max-width: 450px;
+  z-index: 1;
+}

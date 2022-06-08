@@ -3,24 +3,24 @@ sidebar_position: 5
 ---
 
 # Display Results
-Another module available as part of the __F__antastic __U__ser __I__nterface package available at [@3d-dice/fui](https://github.com/3d-dice/FUI). This module takes the [final result object](/docs/usage/objects#roll-result-array-object) as input and creates a modal popup window displaying the final roll results and the final value of that roll. 
+Another module available as part of the [@3d-dice/dice-ui](https://github.com/3d-dice/dice-ui) package. This module takes the [final result object](/docs/usage/objects#roll-result-array-object) as input and creates a modal popup window displaying the final roll results and the final value of that roll. 
 
-![Display Results Scereenshot](/img/10d6-crits.png)
+![Display Results Screenshot](/img/10d6-crits.png)
 
 This module will also apply styles based on different roll properties such as `crit-success`, `crit-failure`, `die-dropped`, `die-rerolled`, and `die-exploded`.
 
 If the roll had a specified target number for success then this module will display either a green checkmark for success, a red x for failure and a gray minus for null (neither success or failure). It will also display the sum total of successes.
 
 ## Install
-Add the FUI module using
+Add the dice-ui module using
 ```
-npm install @3d-dice/fui
+npm install @3d-dice/dice-ui
 ```
 
 ## Setup
-Then create a new instace of the roller
+Then create a new instance of the roller
 ```javascript
-import { DisplayResults } from '@3d-dice/fui'
+import { DisplayResults } from '@3d-dice/dice-ui'
 
 const Display = new DisplayResults()
 ```

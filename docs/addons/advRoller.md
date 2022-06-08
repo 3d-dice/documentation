@@ -3,21 +3,21 @@ sidebar_position: 3
 ---
 
 # Advanced Roller
-The Advanced Roller module is a part of __F__antastic __U__ser __I__nterface package available at [@3d-dice/fui](https://github.com/3d-dice/FUI). This UI module provides a simple text input field and a clear button. The field is connect to [Fantastic Dice Parser](/docs/addons/parser). On submit, the field will send the roll notation to FDP to be parsed and will return the result to the callback `onSubmit`. The clear button will clear out any values stored in the parser and invokes the `onClear` callback, which is usually a good place to clear your dice-box as well.
+The Advanced Roller module is a part of the [@3d-dice/dice-ui](https://github.com/3d-dice/dice-ui) package. This UI module provides a simple text input field and a clear button. The field is connect to [Dice Parser Interface](/docs/addons/parser). On submit, the field will send the roll notation to FDP to be parsed and will return the result to the callback `onSubmit`. The clear button will clear out any values stored in the parser and invokes the `onClear` callback, which is usually a good place to clear your dice-box as well.
 
 ![Advanced Roller Screenshot](/img/advRoller.jpg)
 <!-- ![Advanced Roller Screenshot](/img/advRoller.jpg#gh-light-mode-only)![Advanced Roller Screenshot](/img/advRoller-dark.jpg#gh-dark-mode-only) -->
 
 ## Install
-Add the FUI module using
+Add the dice-ui module using
 ```
-npm install @3d-dice/fui
+npm install @3d-dice/dice-ui
 ```
 
 ## Setup
-Then create a new instace of the roller
+Then create a new instance of the roller
 ```javascript
-import { AdvancedRoller } from '@3d-dice/fui'
+import { AdvancedRoller } from '@3d-dice/dice-ui'
 
 const Roller = new AdvancedRoller()
 ```
@@ -81,7 +81,7 @@ const Roller = new AdvancedRoller({
   // highlight-start
   onClear: () => {
     diceBox.clear()
-    Display.clear()  // Display refers to Display Results module available in @3d-dice/fui
+    Display.clear()  // Display refers to Display Results module available in @3d-dice/dice-ui
   }
   // highlight-end
 })
@@ -128,7 +128,7 @@ const Roller = new AdvancedRoller({
   },
   // highlight-start
   onResults: (results) => {
-    Display.showResults(results)  // Display refers to Display Results module available in @3d-dice/fui
+    Display.showResults(results)  // Display refers to Display Results module available in @3d-dice/dice-ui
   }
   // highlight-end
 })

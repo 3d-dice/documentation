@@ -9,15 +9,15 @@ Box Controls uses the popular [dat.GUI](https://github.com/dataarts/dat.gui) mod
 Use this module if you want to dynamically experiment with the Dice-Box [config settings](/docs/usage/config#configuration-options) and see real time feedback. All changes are passed to Dice-Box's `updateConfig()` method.
 
 ## Install
-Add the FUI module using
+Add the dice-ui module using
 ```
-npm install @3d-dice/fui
+npm install @3d-dice/dice-ui
 ```
 
 ## Setup
-Then create a new instace of the picker
+Then create a new instance of the picker
 ```javascript
-import { BoxControls } from '@3d-dice/fui'
+import { BoxControls } from '@3d-dice/dice-ui'
 
 const Controls = new BoxControls({
   onUpdate: (updates) => {
@@ -42,6 +42,8 @@ const Controls = new BoxControls({
 | settleTimeout 100| 0 | 5000 | 20000 | 1000 |
 | delay | 10 | 10 | 500 | 10 |
 | scale | 1 | 4 | 10 | .1 |
+| shadowTransparency | 0 | 0.8 | 1 | .01 |
+| lightIntensity | 0 | 1 | 5 | .1 |
 
 :::note
 While the slider has a max setting, there is no enforced max in the module itself.
@@ -51,17 +53,26 @@ While the slider has a max setting, there is no enforced max in the module itsel
 | Config Option | default |
 |-|-|
 | enableShadows | true |
+| suspendSimulation | false |
 
 ### Combo Box
 | Config Option | default | options |
 |-|-|-|
-| theme | 'undefined' | purpleRock \| diceOfRolling \| galvanized |
+| theme | 'default' | array passed in from options.themes |
 
 ### Color Picker
 | Config Option | default |
 |-|-|
-| theme | #0974E6 |
+| themeColor | #0974E6 | 
 
 :::note Theme config
-There are two controls for themes. One is the combo box with named themes and the other is the color picker. Whichever option was last set is the one that will be passed on to `updateConfig`
+Not all themes make use of `themeColor`.
 :::
+
+## Setting theme controls
+The controls for `theme` and `themeColor` have been exposed as `themeSelect` and `themeColorPicker` respectively. These controls can now be set externally.
+```javascript
+Controls.themeSelect.setValue('diceOfRolling')
+Controls.themeColorPicker.setValue('#fc05fc')
+```
+This was set up so the controls would reflect the theme or themeColor first loaded by dice box. Other controls have not been exposed.

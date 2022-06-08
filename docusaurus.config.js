@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const jargon = require('remark-jargon')
+const terms = require('./terms.js')
 
 /* @type {import('@docusaurus/types').Config} */
 const config = {
@@ -28,12 +30,21 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '1.0',
+            }
+          },
+          beforeDefaultRemarkPlugins: [
+            [jargon, {jargon: terms}]
+          ]
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/3d-dice/docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -62,14 +73,21 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Docs',
+          // },
+          {to: 'docs/intro', label: 'Docs', position: 'left'},
+          {to: 'blog', label: 'Blog', position: 'left'},
+          {to: 'docs/changelog', label: 'Changelog', position: 'left'},
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [{to: 'docs/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/docs/changelog', label: 'Changelog', position: 'left'},
           {
             href: 'https://github.com/3d-dice',
             label: 'GitHub',
@@ -85,19 +103,19 @@ const config = {
             items: [
               {
                 label: 'Intro',
-                to: '/docs/intro',
+                to: 'docs/intro',
               },
               {
                 label: 'Usage',
-                to: '/docs/usage/config',
+                to: 'docs/usage/config',
               },
               {
                 label: 'Methods',
-                to: '/docs/usage/methods',
+                to: 'docs/usage/methods',
               },
               {
                 label: 'Callbacks',
-                to: '/docs/usage/callbacks',
+                to: 'docs/usage/callbacks',
               },
             ],
           },
@@ -106,11 +124,11 @@ const config = {
             items: [
               {
                 label: 'The Theme Layer',
-                to: '/docs/themes',
+                to: 'docs/themes',
               },
               {
                 label: 'Custom Themes',
-                to: '/docs/themes#how-to-make-a-custom-theme',
+                to: 'docs/themes#how-to-make-a-custom-theme',
               },
             ],
           },
@@ -118,24 +136,24 @@ const config = {
             title: 'Addons',
             items: [
               {
-                label: 'Fantastic Dice Parser',
-                to: '/docs/addons/parser',
+                label: 'Dice Parser Interface',
+                to: 'docs/addons/parser',
               },
               {
                 label: 'Advanced Roller',
-                to: '/docs/addons/advRoller',
+                to: 'docs/addons/advRoller',
               },
               {
                 label: 'Dice Picker',
-                to: '/docs/addons/dicePicker',
+                to: 'docs/addons/dicePicker',
               },
               {
                 label: 'Display Results',
-                to: '/docs/addons/displayResults',
+                to: 'docs/addons/displayResults',
               },
               {
                 label: 'Box Controls',
-                to: '/docs/addons/boxControls',
+                to: 'docs/addons/boxControls',
               },
             ],
           },
@@ -144,11 +162,11 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: 'blog',
               },
               {
                 label: 'Release Notes',
-                to: '/docs/changelog',
+                to: 'docs/changelog',
               },
               {
                 label: 'GitHub',

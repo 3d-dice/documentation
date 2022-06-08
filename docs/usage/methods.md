@@ -13,8 +13,8 @@ A roll will clear current dice and start a new roll. Returns a promise with an a
 roll(notation:mixed, options = {theme:string, newStartPoint:boolean})
 ``` 
 ### Example
-```javascript
-diceBox.roll('2d20',{theme:'#4b8968'})
+```javascript 
+diceBox.roll('2d20',{theme:'rust'})
 ```
 
 ### Arguments
@@ -35,8 +35,8 @@ The notation argument can accept the following roll formats
 ### Options
 | Key | Type | Default Value | Description |
 |-|-|-|-
-| theme | string - optional | `undefined` | a named theme or HEX value for the roll. This value will override theme values that appear in the notation object |
-| newStartPoint | boolean - optional | `true` | will toss the dice in from a new point along the edge of the box |
+| theme | string - optional | `undefined` | the systemName of a theme for the roll. This value will override theme values that appear in the notation object |
+| newStartPoint | boolean - optional | `true` | will toss the collection of dice in from a new point along the edge of the box |
 
 :::info Themes
 Themes can be specified in four different places. On the config object at initialization, as an options parameter when using `.roll()` or `.add()`, as specified in a _roll object_ and as specified in a _die result object_. Themes are applied in the order of _options parameter_ first, _roll object_ or _die result object_ second and box _config option_ third. The _roll object_ and _die result object_ are processed at the same level.
@@ -82,7 +82,7 @@ The __notation__ argument here requires an roll object or an array of roll objec
 | Key | Type | Default Value | Description |
 |-|-|-|-
 | remove | boolean - optional | `false` | indicates the die being rerolled should be removed from the scene |
-| newStartPoint | boolean - optional | `true` | will toss the dice in from a new point along the edge of the box |
+| newStartPoint | boolean - optional | `true` | will toss the collection of dice in from a new point along the edge of the box |
 
 
 ## Remove
@@ -126,7 +126,7 @@ diceBox.getRollResults() // returns an array of roll result objects
 ```
 
 ## Update Config
-Use this method to update any of the [config settings](/docs/usage/config#configuration-options). Most settings will be applied immediatly, but theme/dice color changes will only take effect before or after a roll.
+Use this method to update any of the [config settings](/docs/usage/config#configuration-options). Most settings will be applied immediately, but theme/dice color changes will only take effect before or after a roll.
 ```javascript
 diceBox.updateConfig({configObject})
 ```

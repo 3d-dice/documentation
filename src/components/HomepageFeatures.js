@@ -35,7 +35,7 @@ const FeatureList = [
     Img: '/img/icons/unit.svg',
     description: (
       <>
-        Capabale of handling many different looks and every roll can have a different look. Comes pre-packed with HEX color support, but one can easily drop in custom built themes for the look you want. 
+        Variety is the spice of life. The theme system is flexible, enabling different 3D dice models, colors and skins. Every roll can have a different look. Comes pre-packed with HEX color support, but one can easily drop in <strong><a href="https://github.com/3d-dice/dice-themes" target="_blank">custom built themes</a></strong> for the look you want. 
       </>
     ),
   },
@@ -44,7 +44,7 @@ const FeatureList = [
     Img: '/img/icons/feature-list.svg',
     description: (
       <>
-        Many of the physics and 3D environment paramaters have been exposed for easy customization. Want to make the gravity five times stronger? Go right ahead. All parameters are easy to alter even after initializing the Dice-Box.
+        Many of the physics and 3D environment [paramaters](/docs/usage/config#configuration-options) have been exposed for easy customization. Want to make the gravity five times stronger? Go right ahead. All parameters are easy to alter even after initializing the Dice-Box.
       </>
     ),
   },
@@ -53,7 +53,7 @@ const FeatureList = [
     Img: '/img/icons/box-solution.svg',
     description: (
       <>
-        A few addons are already available with more in the works. The results of the dice roller are formatted as a detailed JavaScript object. Addons can build on top of those results for any number of uses.
+        A few addons are already available at <strong><a href="https://github.com/3d-dice" target="_blank">3d-dice</a></strong> with more in the works. The results of the dice roller are formatted as a detailed JavaScript object. Addons can build on top of those results for any number of uses. Custom events provide convenient spots to tie into the action.
       </>
     ),
   },
@@ -84,7 +84,8 @@ export default function HomepageFeatures() {
         </div>
         <div className="row">
           <div className={clsx('col col--12')}>
-            <h2>Try it out for yourself!</h2>
+            <h2>Live Demo</h2>
+            <p>Try it out for yourself!</p>
             <div id="dice-box">
               <iframe id="dice-demo" className={styles.diceDemo} src="https://d3rivgcgaqw1jo.cloudfront.net/index.html"></iframe>
             </div>
