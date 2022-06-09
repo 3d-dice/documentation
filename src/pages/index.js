@@ -14,6 +14,7 @@ function HomepageHeader() {
       <div className={clsx('container', styles.heroBannerText)}>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__small">* available as an NPM module *</p>
       </div>
     </header>
   );
