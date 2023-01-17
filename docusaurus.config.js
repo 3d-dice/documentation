@@ -1,56 +1,60 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const jargon = require('remark-jargon')
-const terms = require('./terms.js')
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const jargon = require("remark-jargon");
+// const jargon = require("rehype-jargon");
+const terms = require("./terms.js");
 
 /* @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Fantastic Dice',
-  tagline: '3D dice to level up your fun',
-  url: 'https://fantasticdice.games',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: '3d-dice', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  title: "Fantastic Dice",
+  tagline: "3D dice to level up your fun",
+  url: "https://fantasticdice.games",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "3d-dice", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           breadcrumbs: false,
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          lastVersion: 'current',
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          lastVersion: "current",
           versions: {
             current: {
-              label: '1.0',
-            }
+              label: "1.0",
+            },
           },
           beforeDefaultRemarkPlugins: [
-            [jargon, {jargon: terms}]
-          ]
+            [require("remark-jargon"), { jargon: terms }],
+          ],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/3d-dice/docs',
+          editUrl: "https://github.com/3d-dice/docs",
+          beforeDefaultRemarkPlugins: [
+            [require("remark-jargon"), { jargon: terms }],
+          ],
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
         gtag: {
-          trackingID: 'G-4WD1G10LZL'
+          trackingID: "G-4WD1G10LZL",
         },
       }),
     ],
@@ -59,18 +63,24 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        {name: 'keywords', content: '3D, dice, RPG, TTRPG, simulated, 3d-dice, d20, game'},
-        {property:"og:site_name", content:"Fantastic Dice"},
-        {property: 'og:image', content: 'https://fantasticdice.games/img/fantasticScreenshot.jpg'},
-        {property: 'og:image:alt', content: 'Fantastic Dice Homepage'},
-        {property: 'og:type', content: 'article'},
-        {name:"twitter:card", value:"summary_large_image"},
+        {
+          name: "keywords",
+          content: "3D, dice, RPG, TTRPG, simulated, 3d-dice, d20, game",
+        },
+        { property: "og:site_name", content: "Fantastic Dice" },
+        {
+          property: "og:image",
+          content: "https://fantasticdice.games/img/fantasticScreenshot.jpg",
+        },
+        { property: "og:image:alt", content: "Fantastic Dice Homepage" },
+        { property: "og:type", content: "article" },
+        { name: "twitter:card", value: "summary_large_image" },
       ],
       navbar: {
-        title: 'Fantastice Dice',
+        title: "Fantastice Dice",
         logo: {
-          alt: 'Site Logo',
-          src: 'img/logo.svg',
+          alt: "Site Logo",
+          src: "img/logo.svg",
         },
         items: [
           // {
@@ -79,98 +89,100 @@ const config = {
           //   position: 'left',
           //   label: 'Docs',
           // },
-          {to: 'docs/intro', label: 'Docs', position: 'left'},
-          {to: 'blog', label: 'Blog', position: 'left'},
-          {to: 'docs/changelog', label: 'Changelog', position: 'left'},
+          { to: "docs/intro", label: "Docs", position: "left" },
+          { to: "blog", label: "Blog", position: "left" },
+          { to: "docs/changelog", label: "Changelog", position: "left" },
           {
-            type: 'docsVersionDropdown',
-            position: 'right',
-            dropdownItemsAfter: [{to: 'docs/versions', label: 'All versions'}],
+            type: "docsVersionDropdown",
+            position: "right",
+            dropdownItemsAfter: [
+              { to: "docs/versions", label: "All versions" },
+            ],
             dropdownActiveClassDisabled: true,
           },
           {
-            href: 'https://github.com/3d-dice',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/3d-dice",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Intro',
-                to: 'docs/intro',
+                label: "Intro",
+                to: "docs/intro",
               },
               {
-                label: 'Usage',
-                to: 'docs/usage/config',
+                label: "Usage",
+                to: "docs/usage/config",
               },
               {
-                label: 'Methods',
-                to: 'docs/usage/methods',
+                label: "Methods",
+                to: "docs/usage/methods",
               },
               {
-                label: 'Callbacks',
-                to: 'docs/usage/callbacks',
+                label: "Callbacks",
+                to: "docs/usage/callbacks",
               },
             ],
           },
           {
-            title: 'Themes',
+            title: "Themes",
             items: [
               {
-                label: 'The Theme Layer',
-                to: 'docs/themes',
+                label: "The Theme Layer",
+                to: "docs/themes",
               },
               {
-                label: 'Custom Themes',
-                to: 'docs/themes#how-to-make-a-custom-theme',
+                label: "Custom Themes",
+                to: "docs/themes#how-to-make-a-custom-theme",
               },
             ],
           },
           {
-            title: 'Addons',
+            title: "Addons",
             items: [
               {
-                label: 'Dice Parser Interface',
-                to: 'docs/addons/parser',
+                label: "Dice Parser Interface",
+                to: "docs/addons/parser",
               },
               {
-                label: 'Advanced Roller',
-                to: 'docs/addons/advRoller',
+                label: "Advanced Roller",
+                to: "docs/addons/advRoller",
               },
               {
-                label: 'Dice Picker',
-                to: 'docs/addons/dicePicker',
+                label: "Dice Picker",
+                to: "docs/addons/dicePicker",
               },
               {
-                label: 'Display Results',
-                to: 'docs/addons/displayResults',
+                label: "Display Results",
+                to: "docs/addons/displayResults",
               },
               {
-                label: 'Box Controls',
-                to: 'docs/addons/boxControls',
+                label: "Box Controls",
+                to: "docs/addons/boxControls",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: 'blog',
+                label: "Blog",
+                to: "blog",
               },
               {
-                label: 'Release Notes',
-                to: 'docs/changelog',
+                label: "Release Notes",
+                to: "docs/changelog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/3d-dice',
+                label: "GitHub",
+                href: "https://github.com/3d-dice",
               },
             ],
           },
