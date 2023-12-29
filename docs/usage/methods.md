@@ -65,7 +65,7 @@ reroll(notation:mixed, options = {remove:boolean, newStartPoint:boolean})
 ```
 ### Example
 ```javascript
-diceBox.reroll({groupId: 0,rollId: 2})
+diceBox.reroll({groupId: 0,rollId: 2,sides: 'd20'})
 ```
 
 ### Arguments
