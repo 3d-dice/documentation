@@ -1,13 +1,7 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import { themes } from "prism-react-renderer"
+import jargon from "rehype-jargon"
+import terms from "./terms.js"
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const jargon = require("remark-jargon");
-// const jargon = require("rehype-jargon");
-const terms = require("./terms.js");
-
-/* @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Fantastic Dice",
   tagline: "3D dice to level up your fun",
@@ -24,34 +18,31 @@ const config = {
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           breadcrumbs: false,
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
+          sidebarPath: "./sidebars.js",
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           lastVersion: "current",
           versions: {
             current: {
-              label: "1.0",
+              label: "1.1",
             },
           },
-          beforeDefaultRemarkPlugins: [
-            [require("remark-jargon"), { jargon: terms }],
+          beforeDefaultRehypePlugins: [
+            [jargon, { jargon: terms }],
           ],
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl: "https://github.com/3d-dice/docs",
-          beforeDefaultRemarkPlugins: [
-            [require("remark-jargon"), { jargon: terms }],
+          beforeDefaultRehypePlugins: [
+            [jargon, { jargon: terms }],
           ],
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: "./src/css/custom.css",
         },
         gtag: {
           trackingID: "G-4WD1G10LZL",
@@ -60,7 +51,6 @@ const config = {
     ],
   ],
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
         {
@@ -190,10 +180,10 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Frank Ali. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: themes.github,
+        darkTheme: themes.dracula,
       },
     }),
 };
 
-module.exports = config;
+export default config
