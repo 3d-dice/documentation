@@ -6,7 +6,7 @@ sidebar_position: 3
 Everyone loves different dice colors and styles. Also, sometimes it's important to have different colored dice at the virtual table in order to distinguish who's making rolls. With that in mind I've tried to keep the theme layer flexible and easy to customize.
 
 ## How themes work
-Themes should be located in the `/public/assets/dice-box/themes` folder. Dice-Box only comes with the `default` theme. Additional themes can be downloaded or installed from [@3d-dice/dice-themes](https://github.com/3d-dice/dice-themes/tree/main/themes). Themes have been designed to be easy drop-in addons. Inside a theme folder is a `package.json` file used by npm, a `theme.config.json` file, a couple of texture files, and possibly a json file for the 3D models used by this theme. 
+Themes should be located in the `/public/assets/themes` folder. Dice-Box only comes with the `default` theme. Additional themes can be downloaded or installed from [@3d-dice/dice-themes](https://github.com/3d-dice/dice-themes/tree/main/themes). Themes have been designed to be easy drop-in addons. Inside a theme folder is a `package.json` file used by npm, a `theme.config.json` file, a couple of texture files, and possibly a json file for the 3D models used by this theme. 
 
 The folder name for a theme must match the `systemName` parameter in the `theme.config.json` file.
 
@@ -16,7 +16,7 @@ If you use npm to install a theme, then you must manually copy the theme to your
 
 It's important to know that Dice-Box currently only loads the `StandardMaterial` and `CustomMaterial` libraries from BabylonJS. _PBR_ materials are not currently supported due to the high overhead it has. It's also important to know that BabylonJS expects normal maps to be __DirectX formatted__. If you have OpenGL normal maps then you'll want to invert the `red` and `green` color channels of the file (using image editing software like [Affinity Photo](https://affinity.serif.com/en-gb/photo/)) to convert it to DirectX.
 
-For distribution reasons, themes from [@3d-dice/dice-themes](https://github.com/3d-dice/dice-themes/tree/main/themes) include their required 3D models, but if you're using multiple themes that load the same model file, then you can put that shared file in the `/public/assets/dice-box/models` folder. After that, update the `meshFile` path in the `theme.config.json` files as necessary. For example
+For distribution reasons, themes from [@3d-dice/dice-themes](https://github.com/3d-dice/dice-themes/tree/main/themes) include their required 3D models, but if you're using multiple themes that load the same model file, then you can put that shared file in the `/public/assets/models` folder. After that, update the `meshFile` path in the `theme.config.json` files as necessary. For example
 ```javascript
   meshName: "gemstone",
   meshFile: "../../models/gemstone.json",
