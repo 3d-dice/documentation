@@ -84,6 +84,31 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 	filter: invert(30%) sepia(46%) saturate(457%) hue-rotate(175deg) brightness(98%) contrast(93%);
 }
 
+.genesysResults .symbol {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+}
+
+.genesysResults .die-boost {
+	color: #1396AB;
+}
+.genesysResults .die-setback {
+	color: #000;
+}
+.genesysResults .die-ability {
+	color: #339730;
+}
+.genesysResults .die-difficulty {
+	color: #B921EF;
+}
+.genesysResults .die-challenge {
+	color: #971D17;
+}
+.genesysResults .die-proficiency {
+	color: #DAA42A;
+}
+
 /* // Add a dashed line under jargon terms */
 .jargon-term {
   text-decoration: underline dotted #228be6

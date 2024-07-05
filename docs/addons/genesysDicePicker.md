@@ -3,11 +3,13 @@ sidebar_position: 6
 ---
 
 # Genesys Dice Picker
-This is a simple UI module aimed at making picking dice simple and easy. I put this module together mostly to make setting up simple rolls on mobile devices easy. Just tap away at the dice you want to roll. It's very similar in nature to [Advanced Roller](/docs/addons/advRoller).
+This module has all the same features as [Dice Picker](/docs/addons/dicePicker). There are only a few UI differences to accommodate this unique dice set. Just tap away at the dice you want to roll.
 
-This module is for the standard 7 _TTRPG_ dice. The main intention of this module is to function as an example of how to create your own UI interface for the Dice Box.
+:::note
+This module is for use with the [Genesys dice theme](/docs/themes/genesys). The main intention of this module is to function as an example of how to create your own UI interface for the Dice Box.
+:::
 
-![Dice Picker Screenshot](/img/addons/dicePicker1.jpg)
+![Genesys Dice Picker Screenshot](/img/addons/genesysDicePicker1.jpg)
 
 ## Install
 Add the dice-ui module using
@@ -18,13 +20,13 @@ npm install @3d-dice/dice-ui
 ## Setup
 Then create a new instance of the picker
 ```javascript
-import { DicePicker } from '@3d-dice/dice-ui'
+import { GenesysDicePicker } from '@3d-dice/dice-ui'
 
-const dicePicker = new DicePicker()
+const dicePicker = new GenesysDicePicker()
 ```
 
 ### Config Options
-The `DicePicker` only has one argument which is a config object
+The `GenesysDicePicker` only has one argument which is a config object
 
 | Option | type | default | Description |
 |-|-|-|-|
@@ -43,38 +45,30 @@ The `DicePicker` only has one argument which is a config object
 | setNotation | `notation` :object | Set the default values for tossing, sort of like placeholder values |
 | handleResults | `results` :object | Passes roll results object to FDP to check for rerolls. Gets the final parsed results from FDP. Calls `onResults` callback |
 
-:::note
-There's currently nothing in Dice Picker that would trigger rerolls. Most of the code in this module was copied from the Advanced Roller
-:::
-
-With the exception of `setNotation` these methods and callbacks operate the same as the [Advanced Roller](/docs/addons/advRoller).
-
 `setNotation` example:
 ```javascript
 dicePicker.setNotation({
-  d4: {
-    count: 2
+  ability: {
+    count: 0
   },
-  d6: {
-    count: 2
+  boost: {
+    count: 0
   },
-  d8: {
-    count: 2
+  challenge: {
+    count: 0
   },
-  d10: {
-    count: 2
+  difficulty: {
+    count: 0
   },
-  d12: {
-    count: 2
+  proficiency: {
+    count: 0
   },
-  d20: {
-    count: 2
-  },
-  d100: {
-    count: 1
+  setback: {
+    count: 0
   }
 })
 ```
 
 Screenshot with notation set:
-![Set Notation](/img/addons/dicePicker2.jpg)
+
+![Set Notation](/img/addons/genesysDicePicker2.jpg)
