@@ -162,10 +162,6 @@ const config = {
                 to: "blog",
               },
               {
-                label: "Release Notes",
-                to: "docs/changelog",
-              },
-              {
                 label: "GitHub",
                 href: "https://github.com/3d-dice",
               },
