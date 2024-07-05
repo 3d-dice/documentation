@@ -81,7 +81,6 @@ const config = {
           // },
           { to: "docs/intro", label: "Docs", position: "left" },
           { to: "blog", label: "Blog", position: "left" },
-          { to: "docs/changelog", label: "Changelog", position: "left" },
           {
             type: "docsVersionDropdown",
             position: "right",
@@ -127,10 +126,6 @@ const config = {
               {
                 label: "The Theme Layer",
                 to: "docs/themes",
-              },
-              {
-                label: "Custom Themes",
-                to: "docs/themes#how-to-make-a-custom-theme",
               },
             ],
           },
