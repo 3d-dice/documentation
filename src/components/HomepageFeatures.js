@@ -44,7 +44,7 @@ const FeatureList = [
     Img: '/img/icons/feature-list.svg',
     description: (
       <>
-        Many of the physics and 3D environment <strong><a href="/docs/usage/config#configuration-options">paramaters</a></strong> have been exposed for easy customization. Want to make the gravity five times stronger? Go right ahead. All parameters are easy to alter even after initializing the Dice-Box.
+        Many of the physics and 3D environment <strong><a href="/docs/usage/config#configuration-options">parameters</a></strong> have been exposed for easy customization. Want to make the gravity five times stronger? Go right ahead. All parameters are easy to alter even after initializing the Dice-Box.
       </>
     ),
   },
