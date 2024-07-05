@@ -6,7 +6,7 @@ sidebar_position: 2
 As mentioned in the [config setup](http://localhost:3001/docs/usage/config), Dice-Box requires a parser to do the fun things. Any roll notations that are more than the simple pattern `{quantity}d{side}+/-{modifier}` have to go through a parser to make sense of the notation. All the rolls supported are documented at [Roll20 Dice Specification](https://roll20.zendesk.com/hc/en-us/articles/360037773133-Dice-Reference#DiceReference-Roll20DiceSpecification)
 
 ## dice-roller-parser
-Rather than write my own parser from the ground up, I found one written by [Ben Morton](https://github.com/BTMorton) called [dice_roller](https://github.com/BTMorton/dice_roller). While almost fully featured, the `dice_roller` project seems to have gone dormant. I forked that project into [@3d-dice/dice-roller-parser](https://github.com/3d-dice/dice-roller-parser), where I've been able to fix some bugs I've found as well as add features I need for Dice-Box. The important feature of dice_roller that made it different from other programmatic dice rollers like [RPG Dice Roller](https://dice-roller.github.io/documentation/) is that it allows a custom random function as a constructor parameter. Instead of using a random function, I hijack this feature to pass in a function that contains all the roll results from Dice-Box. So insted of producing random numbers, it's just parsing the notation with the values I've delivered to it.
+Rather than write my own parser from the ground up, I found one written by [Ben Morton](https://github.com/BTMorton) called [dice_roller](https://github.com/BTMorton/dice_roller). While almost fully featured, the `dice_roller` project seems to have gone dormant. I forked that project into [@3d-dice/dice-roller-parser](https://github.com/3d-dice/dice-roller-parser), where I've been able to fix some bugs I've found as well as add features I need for Dice-Box. The important feature of dice_roller that made it different from other programmatic dice rollers like [RPG Dice Roller](https://dice-roller.github.io/documentation/) is that it allows a custom random function as a constructor parameter. Instead of using a random function, I hijack this feature to pass in a function that contains all the roll results from Dice-Box. So instead of producing random numbers, it's just parsing the notation with the values I've delivered to it.
 
 :::note
 The documentation for [@3d-dice/dice-roller-parser](https://github.com/3d-dice/dice-roller-parser) on GitHub is pretty robust so it is not reproduced here.
@@ -16,7 +16,7 @@ The documentation for [@3d-dice/dice-roller-parser](https://github.com/3d-dice/d
 __F__antastic __D__ice __P__arser, or FDP for short, simply provides an interface between [@3d-dice/dice-roller-parser](https://github.com/3d-dice/dice-roller-parser) and [@3d-dice/dice-box](https://github.com/3d-dice/dice-box). Since `dice-roller-parser` is pretty self contained, I did not want to include this interface in that package. The parser is available at [@3d-dice/fdp](https://github.com/3d-dice/fdp)
 
 :::note
-`@3d-dice/dice-roller-parser` is a dependency of `@3d-dice/fdp`. You do not have to install it seperatly.
+`@3d-dice/dice-roller-parser` is a dependency of `@3d-dice/fdp`. You do not have to install it separately.
 :::
 
 ## Install
@@ -25,7 +25,7 @@ Install the library using:
 npm install @3d-dice/fdp
 ```
 ## Setup
-Then create a new instace of the parser
+Then create a new instance of the parser
 ```javascript
 import DiceParser from '@3d-dice/fdp'
 

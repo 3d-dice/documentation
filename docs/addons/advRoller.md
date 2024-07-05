@@ -9,8 +9,8 @@ The Advanced Roller module is a part of the [@3d-dice/dice-ui](https://github.co
 Advanced Roller only works with the following dice types: `d4`, `d6`, `d8`, `d10`, `d12`, `d20`, `d100`, `dfate`.
 :::
 
-![Advanced Roller Screenshot](/img/advRoller.jpg)
-<!-- ![Advanced Roller Screenshot](/img/advRoller.jpg#gh-light-mode-only)![Advanced Roller Screenshot](/img/advRoller-dark.jpg#gh-dark-mode-only) -->
+![Advanced Roller Screenshot](/img/addons/advRoller.jpg)
+<!-- ![Advanced Roller Screenshot](/img/addons/advRoller.jpg#gh-light-mode-only)![Advanced Roller Screenshot](/img/addons/advRoller-dark.jpg#gh-dark-mode-only) -->
 
 ## Install
 Add the dice-ui module using

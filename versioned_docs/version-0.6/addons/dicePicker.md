@@ -5,7 +5,7 @@ sidebar_position: 4
 # Dice Picker
 This is a simple UI module aimed at making picking dice simple and easy. I put this module together mostly to make setting up simple rolls on mobile devices easy. Just tap away at the dice you want to roll. It's very similar in nature to [Advanced Roller](/docs/addons/advRoller).
 
-![Dice Picker Screenshot](/img/dicePicker1.jpg)
+![Dice Picker Screenshot](/img/addons/dicePicker1.jpg)
 
 ## Install
 Add the FUI module using
@@ -75,4 +75,4 @@ dicePicker.setNotation({
 ```
 
 Screenshot with notation set:
-![Set Notation](/img/dicePicker2.jpg)
+![Set Notation](/img/addons/dicePicker2.jpg)

@@ -5,7 +5,7 @@ sidebar_position: 5
 # Display Results
 Another module available as part of the [@3d-dice/dice-ui](https://github.com/3d-dice/dice-ui) package. This module takes the [final result object](/docs/usage/objects#roll-result-array-object) as input and creates a modal popup window displaying the final roll results and the final value of that roll. 
 
-![Display Results Screenshot](/img/10d6-crits.png)
+![Display Results Screenshot](/img/addons/10d6-crits.png)
 
 This module will also apply styles based on different roll properties such as `crit-success`, `crit-failure`, `die-dropped`, `die-rerolled`, and `die-exploded`.
 
@@ -120,16 +120,16 @@ Display.showResults(results)
  ## Examples
  `4d6!` (exploding roll)
 
- ![exploding 4d6](/img/dr-explode.png)
+ ![exploding 4d6](/img/addons/dr-explode.png)
 
 `10d10>7` (targeted success roll)
 
-![target roll](/img/dr-targeted.png)
+![target roll](/img/addons/dr-targeted.png)
 
 `2d20kh` (advantage roll - keep highest)
 
-![reroll](/img/dr-dropped.png)
+![reroll](/img/addons/dr-dropped.png)
 
 `2d10ro<2` (reroll once 2s or less)
 
-![reroll](/img/dr-reroll.png)
+![reroll](/img/addons/dr-reroll.png)

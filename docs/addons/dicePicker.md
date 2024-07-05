@@ -7,7 +7,7 @@ This is a simple UI module aimed at making picking dice simple and easy. I put t
 
 This module is for the standard 7 _TTRPG_ dice. The main intention of this module is to function as an example of how to create your own UI interface for the Dice Box.
 
-![Dice Picker Screenshot](/img/dicePicker1.jpg)
+![Dice Picker Screenshot](/img/addons/dicePicker1.jpg)
 
 ## Install
 Add the dice-ui module using
@@ -77,4 +77,4 @@ dicePicker.setNotation({
 ```
 
 Screenshot with notation set:
-![Set Notation](/img/dicePicker2.jpg)
+![Set Notation](/img/addons/dicePicker2.jpg)
