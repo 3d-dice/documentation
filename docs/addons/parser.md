@@ -3,7 +3,11 @@ sidebar_position: 2
 ---
 
 # Dice Parser Interface
-As mentioned in the [config setup](http://localhost:3001/docs/usage/config), Dice-Box requires a parser to do the fun things. Any roll notations that are more than the simple pattern `{quantity}d{side}+/-{modifier}` have to go through a parser to make sense of the notation. All the rolls supported are documented at [Roll20 Dice Specification](https://roll20.zendesk.com/hc/en-us/articles/360037773133-Dice-Reference#DiceReference-Roll20DiceSpecification)
+As mentioned in the [config setup](http://localhost:3001/docs/usage/config), Dice-Box requires a parser to do the fun _TTRPG_ things. Any roll notations that are more than the simple pattern `{quantity}d{side}+/-{modifier}` have to go through a parser to make sense of the notation. All the rolls supported are documented at [Roll20 Dice Specification](https://roll20.zendesk.com/hc/en-us/articles/360037773133-Dice-Reference#DiceReference-Roll20DiceSpecification)
+
+:::note
+Dice Parser Interface only works with the following dice types: `d4`, `d6`, `d8`, `d10`, `d12`, `d20`, `d100`, `dfate`.
+:::
 
 ## dice-roller-parser
 Rather than write my own parser from the ground up, I found one written by [Ben Morton](https://github.com/BTMorton) called [dice_roller](https://github.com/BTMorton/dice_roller). While almost fully featured, the `dice_roller` project seems to have gone dormant. I forked that project into [@3d-dice/dice-roller-parser](https://github.com/3d-dice/dice-roller-parser), where I've been able to fix some bugs I've found as well as add features I need for Dice-Box. The important feature of dice_roller that made it different from other programmatic dice rollers like [RPG Dice Roller](https://dice-roller.github.io/documentation/) is that it allows a custom random function as a constructor parameter. Instead of using a random function, I hijack this feature to pass in a function that contains all the roll results from Dice-Box. So instead of producing random numbers, it's just parsing the notation with the values I've delivered to it.
@@ -12,12 +16,16 @@ Rather than write my own parser from the ground up, I found one written by [Ben 
 The documentation for [@3d-dice/dice-roller-parser](https://github.com/3d-dice/dice-roller-parser) on GitHub is pretty robust so it is not reproduced here.
 :::
 
-## Parser Interface
-The `dice-parser-interface` simply provides an interface between [@3d-dice/dice-roller-parser](https://github.com/3d-dice/dice-roller-parser) and [@3d-dice/dice-box](https://github.com/3d-dice/dice-box). Since `dice-roller-parser` is pretty self contained, I did not want to include this interface in that package. The parser is available at [@3d-dice/dice-parser-interface](https://github.com/3d-dice/dice-parser-interface)
-
 :::note
 `@3d-dice/dice-roller-parser` is a dependency of `@3d-dice/dice-parser-interface`. You do not have to install it separately.
 :::
+
+## Parser Interface
+The `dice-parser-interface` simply provides an interface between [@3d-dice/dice-roller-parser](https://github.com/3d-dice/dice-roller-parser) and [@3d-dice/dice-box](https://github.com/3d-dice/dice-box). Since `dice-roller-parser` is pretty self contained, I did not want to include this interface in that package. The parser is available at [@3d-dice/dice-parser-interface](https://github.com/3d-dice/dice-parser-interface)
+
+
+### Caveats
+One thing this modules does not do is provide the interface for providing an input for the roll notation string or displaying the final results. It is expected that the developer will create their own inputs and outputs or a module such as [Advanced Roller](/docs/addons/advRoller)
 
 ## Install
 Install the library using:
@@ -49,9 +57,6 @@ const submitForm = (e) => {
 
 form.addEventListener("submit", submitForm)
 ```
-
-### Caveats
-One thing this modules does not do is provide the interface for providing an input for the roll notation string or displaying the final results. It is expected that the developer will create their own inputs and outputs or use modules from [@3d-dice/dice-ui](https://github.com/3d-dice/dice-ui)
 
 ## Methods
 | Method | Arguments | Description |

@@ -8,6 +8,8 @@ Box Controls uses the popular [dat.GUI](https://github.com/dataarts/dat.gui) mod
 
 Use this module if you want to dynamically experiment with the Dice-Box [config settings](/docs/usage/config#configuration-options) and see real time feedback. All changes are passed to Dice-Box's `updateConfig()` method.
 
+This module was created for experimental and demo purposes.
+
 ## Install
 Add the dice-ui module using
 ```

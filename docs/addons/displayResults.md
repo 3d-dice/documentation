@@ -11,6 +11,8 @@ This module will also apply styles based on different roll properties such as `c
 
 If the roll had a specified target number for success then this module will display either a green checkmark for success, a red x for failure and a gray minus for null (neither success or failure). It will also display the sum total of successes.
 
+This module now supports string values and an array of string values. This is useful if the dice faces represent symbols or text (e.g.: "Left, Right, Center" or "Genesys").
+
 ## Install
 Add the dice-ui module using
 ```

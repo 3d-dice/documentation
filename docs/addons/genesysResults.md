@@ -2,4 +2,4 @@
 sidebar_position: 7
 ---
 
-# Module Ideas
+# Genesys Display Results

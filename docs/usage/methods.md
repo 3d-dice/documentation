@@ -35,7 +35,7 @@ The notation argument can accept the following roll formats
 ### Options
 | Key | Type | Default Value | Description |
 |-|-|-|-
-| theme | string - optional | `undefined` | the systemName of a theme for the roll. This value will override theme values that appear in the notation object |
+| theme | string - optional | `undefined` | the _systemName_ of a theme for the roll. This value will override theme values that appear in the notation object |
 | newStartPoint | boolean - optional | `true` | will toss the collection of dice in from a new point along the edge of the box |
 
 :::info Themes

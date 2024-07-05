@@ -5,6 +5,8 @@ sidebar_position: 4
 # Dice Picker
 This is a simple UI module aimed at making picking dice simple and easy. I put this module together mostly to make setting up simple rolls on mobile devices easy. Just tap away at the dice you want to roll. It's very similar in nature to [Advanced Roller](/docs/addons/advRoller).
 
+This module is for the standard 7 _TTRPG_ dice. The main intention of this module is to function as an example of how to create your own UI interface for the Dice Box.
+
 ![Dice Picker Screenshot](/img/dicePicker1.jpg)
 
 ## Install

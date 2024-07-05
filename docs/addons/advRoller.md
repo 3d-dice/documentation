@@ -5,6 +5,10 @@ sidebar_position: 3
 # Advanced Roller
 The Advanced Roller module is a part of the [@3d-dice/dice-ui](https://github.com/3d-dice/dice-ui) package. This UI module provides a simple text input field and a clear button. The field is connect to [Dice Parser Interface](/docs/addons/parser). On submit, the field will send the roll notation to FDP to be parsed and will return the result to the callback `onSubmit`. The clear button will clear out any values stored in the parser and invokes the `onClear` callback, which is usually a good place to clear your dice-box as well.
 
+:::note
+Advanced Roller only works with the following dice types: `d4`, `d6`, `d8`, `d10`, `d12`, `d20`, `d100`, `dfate`.
+:::
+
 ![Advanced Roller Screenshot](/img/advRoller.jpg)
 <!-- ![Advanced Roller Screenshot](/img/advRoller.jpg#gh-light-mode-only)![Advanced Roller Screenshot](/img/advRoller-dark.jpg#gh-dark-mode-only) -->
 
