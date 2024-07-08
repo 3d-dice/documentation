@@ -69,8 +69,8 @@ These options can be passed into the constructor when creating a new instance of
 | enableShadows    | true            | Do the dice cast a shadow? Turn off for a performance bump |
 | shadowTransparency | .8            | Set the transparency of the shadows cast by the dice |
 | theme            | 'default'       | For additional themes see [@3d-dice/dice-themes](https://github.com/3d-dice/dice-themes) |
-| preloadThemes[^1]| []              | An array of themes to pre-load. Useful for themes that extend other themes. |
-| externalThemes[^1]| {}             | An object with theme system names as the key value and an external url path to theme assets. Useful for accessing themes on a CDN.  |
+| preloadThemes[^1]| \[\]              | An array of themes to pre-load. Useful for themes that extend other themes. |
+| externalThemes[^1]| \{\}             | An object with theme system names as the key value and an external url path to theme assets. Useful for accessing themes on a CDN.  |
 | themeColor       | '#2e8555'       | Some themes allow for a configurable base color as a HEX value |
 | scale            | 6               | Options are best between 2-9. The higher the number the larger the dice. Accepts decimal numbers |
 | suspendSimulation| false           | Turn off the 3D simulation and use the built-in random number generator instead. |
