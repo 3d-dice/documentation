@@ -12,7 +12,9 @@ Everything in the [@3d-dice](https://github.com/3d-dice/) suite falls under the 
 
 ## Die Types
 
-This documentation makes frequent reference to common dice notations such as `5d6` where the first number represents the number of dice to roll and the `d#` represents the number of sides on a die. The default theme dice are `d4`, `d6`, `d8`, `d10`, `d12`, `d20`, and `d100`.
+This documentation makes frequent reference to common dice notations such as `5d6` where the first number represents the number of dice to roll and the `d#` represents the number of sides on a die. The default theme dice are `d4`, `d6`, `d8`, `d10`, `d12`, `d20`, and `d100`. 
+
+With the latest version of DiceBox, `d#` represents the die type or name that is being used. For example, with the Genesys dice set, you may roll `4dboost` dice or `2dability`.
 
 ## Feature Requests
 
@@ -20,8 +22,8 @@ This project id under active development with more features in the pipeline. Fee
 
 ## Show me some code
 
-See the kitchen sink code demo here: https://codesandbox.io/s/3d-dice-demo-v1-0-2-sm4ien
+See the kitchen sink code demo here: https://codesandbox.io/p/sandbox/3d-dice-demo-v1-1-3-68tvkl
 
-Here's a simple React Demo for rolling attributes (using 3d6): https://codesandbox.io/s/react-roller-attributes-v1-0-2-65uqhv
+Here's a simple React Demo for rolling attributes (using 3d6): https://codesandbox.io/p/sandbox/react-roller-attributes-v1-1-3-65uqhv
 
-Here's a React Demo with support for advanced dice notation: https://codesandbox.io/s/react-roller-advanced-notation-v1-0-2-rz0nmr  
+Here's a React Demo with support for advanced dice notation: https://codesandbox.io/s/react-roller-advanced-notation-v1-1-3-rz0nmr  

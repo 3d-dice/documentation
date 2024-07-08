@@ -152,8 +152,8 @@ This object is required to load a theme
   version: number,               // optional - version of this theme
   thumbnail: string,             // optional - A rendered image of what this dice theme looks like
   meshFile: string,              // the relative path and file name that contains the 3D mesh data for this theme. Only required if not using 'default' mesh. This can point to a shared mesh file located anywhere in static assets folder.
-  meshName: string,              // the system name used for this theme's 3D models. Only required if not using 'default' mesh. If sharing a mesh file with another theme, then it should have the same meshName as the one it's sharing.
-  diceAvailable: [],             // a list of dice available (:string) with this theme. Only required if different from the default ['d4','d6','d8','d10','d12','d20','d100']
+  meshName: string,              // deprecated in v1.1 - the system name used for this theme's 3D models. Only required if not using 'default' mesh. If sharing a mesh file with another theme, then it should have the same meshName as the one it's sharing.
+  diceAvailable: [],             // required - a list of dice available (:string) with this theme.
   material: {
     type: string,                // required - the type of material being loaded for this theme
     diffuseTexture: string || {  // either the relative path and file name of a texture file or an object

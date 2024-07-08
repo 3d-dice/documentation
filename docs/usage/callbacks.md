@@ -3,6 +3,12 @@ sidebar_position: 4
 ---
 
 # Callbacks
+## onBeforeRoll
+This callback is triggered before the roll begins, but after the notation has been parsed. The callback argument includes the parsed notation.
+```javascript
+diceBox.onBeforeRoll = (parsedNotation) => console.log('parsedNotation', parsedNotation)
+```
+
 ## onDieComplete
 This callback is triggered whenever an individual die has completed rolling and contains the die result object as it's argument.
 ```javascript

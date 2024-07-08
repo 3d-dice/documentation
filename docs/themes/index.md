@@ -10,14 +10,20 @@ Themes should be located in the `/public/assets/themes` folder. Dice-Box only co
 
 The folder name for a theme must match the `systemName` parameter in the `theme.config.json` file.
 
-:::info Using NPM
-If you use npm to install a theme, then you must manually copy the theme to your static assets folder.
+:::info Copying theme files
+If you use npm to install a theme, then you must manually copy the theme to your static assets folder. 
+
+Theme can also be downloaded as a `.zip` file from the [dice-themes/downloads](https://github.com/3d-dice/dice-themes/tree/main/downloads) folder.
 :::
 
 ## Extended themes
 Some themes are design to add more options to other themes. For instance, when you'd like to add more dice types to a set. These themes are identified by the `extends` parameter in the `theme.config.json` file.
 
-For example, [Default Extras](/docs/themes/defaultExtras) is a theme that extends the Default theme. It adds a `d2`, `dfate` and `dpip` to the default dice available. They may then be called with other default dice using standard notation such as  `diceBox.roll(['2d2', '2d6'])`
+For example, [Default Extras](/docs/themes/defaultExtras) is a theme that extends the Default theme. It adds a `d2`, `dfate` and `dpip` to the default dice available. They may then be called with other default dice using standard notation such as  `diceBox.roll(['2d2', '2d6'])`.
+
+If you assign an theme extension to the `config.theme` option, the extension and the theme it targets will both be loaded and `config.theme` will be set to the target's `systemName`.
+
+You cannot extend a theme that extends another theme. You can extend a target theme multiple times.
 
 :::info Naming Practices
 A theme extension will follow the naming pattern of `{target theme name}-{extension name}`. For example `default-extras` or `diceOfRolling-fate`

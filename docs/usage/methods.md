@@ -108,13 +108,18 @@ diceBox.clear()
 ```
 
 ## Hide
-This will hide the canvas element that the Dice-Box is rendered to.
+This will hide the canvas element that the Dice-Box is rendered to. If a `className` is provided, then it will be added to the `<canvas>` element in order to enable a CSS based transition. If no `className` is provided then visibility is toggled off without an effect.
 ```javascript
-diceBox.hide()
+diceBox.hide(className:string)
 ```
 
+### Arguments
+| Argument | Type | Default Value | Description |
+|-|-|-|-|
+| className | string | n\a | Sets a CSS class on the canvas in order to use CSS transition effects for hide. |
+
 ## Show
-This will show the canvas element that the Dice-Box is rendered to.
+This will show the canvas element that the Dice-Box is rendered to. If a `className` was defined on `hide()` then this class name will be removed from the canvas to reverse the hide effect. Otherwise visibility is toggled on.
 ```javascript
 diceBox.show()
 ```
